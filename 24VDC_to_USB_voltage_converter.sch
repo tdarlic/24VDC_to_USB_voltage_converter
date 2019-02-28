@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:24VDC_to_USB_voltage_converter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1885,4 +1886,28 @@ Text Label 1825 2400 0    50   ~ 0
 FUSED
 Text Label 9350 3550 0    50   ~ 0
 SHIELD
+Text Notes 5350 5825 0    79   ~ 16
+Mechanic
+$Comp
+L Local-special:FIDUCIAL FID1
+U 1 1 5C784501
+P 5900 7300
+F 0 "FID1" H 6028 7353 60  0000 L CNN
+F 1 "FIDUCIAL" H 6028 7247 60  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 6028 7194 60  0001 L CNN
+F 3 "" H 5900 7300 60  0000 C CNN
+	1    5900 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local-special:FIDUCIAL FID2
+U 1 1 5C784735
+P 5900 7550
+F 0 "FID2" H 6028 7603 60  0000 L CNN
+F 1 "FIDUCIAL" H 6028 7497 60  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 6028 7444 60  0001 L CNN
+F 3 "" H 5900 7550 60  0000 C CNN
+	1    5900 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -210,6 +210,20 @@ X D 6 350 150 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Local-special_FIDUCIAL
+#
+DEF Local-special_FIDUCIAL FID 0 40 Y Y 1 F N
+F0 "FID" 20 -150 60 H V C CNN
+F1 "Local-special_FIDUCIAL" 0 145 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 0 50 0 1 0 f
+P 2 0 1 0 -100 0 100 0 N
+P 2 0 1 0 0 100 0 -100 N
+ENDDRAW
+ENDDEF
+#
 # Local-special_TPS54308
 #
 DEF Local-special_TPS54308 U 0 40 Y Y 1 F N
