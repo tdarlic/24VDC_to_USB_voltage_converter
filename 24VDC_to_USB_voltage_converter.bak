@@ -315,8 +315,6 @@ $EndComp
 Wire Wire Line
 	6700 3125 6700 2925
 Connection ~ 6700 3125
-NoConn ~ 8900 3125
-NoConn ~ 8900 3225
 $Comp
 L Device:C C5
 U 1 1 5C6FE444
@@ -378,8 +376,6 @@ Wire Wire Line
 	8125 3175 8125 2925
 Connection ~ 8125 2925
 Wire Wire Line
-	8125 2925 8900 2925
-Wire Wire Line
 	6700 3925 7275 3925
 Wire Wire Line
 	9200 3925 9200 3525
@@ -398,9 +394,6 @@ Wire Wire Line
 	7700 3925 8125 3925
 Wire Wire Line
 	8125 3475 8125 3925
-Connection ~ 8125 3925
-Wire Wire Line
-	8125 3925 9200 3925
 $Comp
 L Device:R R4
 U 1 1 5C707D8F
@@ -1905,11 +1898,39 @@ U 1 1 5C784735
 P 5900 7550
 F 0 "FID2" H 6028 7603 60  0000 L CNN
 F 1 "FIDUCIAL" H 6028 7497 60  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 6028 7444 60  0001 L CNN
+F 2 "footprints:FIDUCIAL" H 6028 7444 60  0001 L CNN
 F 3 "" H 5900 7550 60  0000 C CNN
 	1    5900 7550
 	1    0    0    -1  
 $EndComp
 Text Notes 5350 7250 0    118  ~ 24
 veći fiduciali
+Wire Wire Line
+	8125 2925 8900 2925
+Wire Wire Line
+	8125 3925 9200 3925
+Connection ~ 8125 3925
+$Comp
+L Device:R R?
+U 1 1 5C82DD6E
+P 8600 3350
+F 0 "R?" H 8670 3396 50  0000 L CNN
+F 1 "0R" H 8670 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 3350 50  0001 C CNN
+F 3 "~" H 8600 3350 50  0001 C CNN
+	1    8600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3125 8600 3125
+Wire Wire Line
+	8600 3125 8600 3200
+Wire Wire Line
+	8600 3500 8600 3600
+Wire Wire Line
+	8600 3600 8850 3600
+Wire Wire Line
+	8850 3600 8850 3225
+Wire Wire Line
+	8850 3225 8900 3225
 $EndSCHEMATC
