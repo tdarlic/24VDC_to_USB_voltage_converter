@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:24VDC_to_USB_voltage_converter-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -4436,4 +4436,6 @@ Wire Wire Line
 Connection ~ 875  3200
 Wire Wire Line
 	875  3200 875  3250
+Text Notes 8125 3650 0    50   ~ 0
+R4 - C8:\nPlace ferrite bead \nto isolate ground\nand shield
 $EndSCHEMATC
